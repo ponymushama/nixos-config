@@ -39,6 +39,7 @@
     lua
     nodejs
     nodePackages.npm
+    patchelf
     (pkgs-rime.librime)
     (pkgs-rime.librime-lua)
 
