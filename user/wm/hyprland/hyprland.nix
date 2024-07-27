@@ -743,15 +743,7 @@ in
           "interval" = 3;
           "on-click" = "hyprprofile-dmenu";
         };
-        "keyboard-state" = {
-          "numlock" = true;
-          "format" = " {icon} ";
-          "format-icons" = {
-            "locked" = "󰎠";
-            "unlocked" = "󱧓";
-          };
-        };
-        "hyprland/workspaces" = {
+       "hyprland/workspaces" = {
           "format" = "{icon}";
           "format-icons" = {
             "1" = "󱚌";
