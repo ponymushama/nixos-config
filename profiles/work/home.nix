@@ -176,7 +176,6 @@
     mediainfo
     libmediainfo
     audio-recorder
-    gnome.cheese
     ardour
     rosegarden
     tenacity

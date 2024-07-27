@@ -27,7 +27,6 @@ in
     pegasus-frontend
     myRetroarch
     libfaketime
-    airshipper
     qjoypad
     superTux
     superTuxKart
