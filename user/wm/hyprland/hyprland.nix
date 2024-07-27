@@ -584,22 +584,12 @@ in
     general {
       lock_cmd = pgrep hyprlock || hyprlock
       before_sleep_cmd = loginctl lock-session
-      ignore_dbus_inhibit = false
+      after_sleep_cmd = hyperctl dispatch dpms on
     }
 
     listener {
-      timeout = 150 # in seconds
+      timeout = 300 # in seconds
       on-timeout = loginctl lock-session
-    }
-    listener {
-      timeout = 165 # in seconds
-      on-timeout = hyprctl dispatch dpms off
-      on-resume = hyprctl dispatch dpms on
-    }
-    listener {
-      timeout = 7200 # in seconds
-      on-timeout = systemctl suspend
-      on-resume = hyprctl dispatch dpms on
     }
   '';
   home.file.".config/hypr/hyprlock.conf".text = ''
