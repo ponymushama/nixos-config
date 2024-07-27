@@ -180,7 +180,7 @@ in
 
        bind=SUPER,RETURN,exec,'' + userSettings.term + ''
 
-       bind=SUPER,A,exec,'' + userSettings.spawnEditor + ''
+       bind=SUPER,A,exec,''+ userSettings.term + " "+''-e nvim
 
        bind=SUPER,S,exec,'' + userSettings.browser + ''
 
