@@ -182,7 +182,7 @@ in
 
        bind=SUPER,A,exec,''+ userSettings.term + " "+''-e nvim
 
-       bind=SUPER,S,exec,'' + userSettings.browser + ''
+       bind=SUPER,S,exec,librewolf
 
        bind=SUPERCTRL,S,exec,container-open # qutebrowser only
 
@@ -564,8 +564,6 @@ in
   home.file.".config/nwg-dock-pinned".text = ''
     nwggrid
     Alacritty
-    qutebrowser
-    brave-browser
     librewolf
     writer
     impress
