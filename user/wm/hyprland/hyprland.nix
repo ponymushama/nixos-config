@@ -134,8 +134,8 @@ in
              hyprgrass-bind = , swipe:3:u, hycov:toggleoverview
              hyprgrass-bind = , swipe:3:d, exec, nwggrid-wrapper
 
-             hyprgrass-bind = , swipe:3:l, exec, hyprnome --previous
-             hyprgrass-bind = , swipe:3:r, exec, hyprnome
+             hyprgrass-bind = , swipe:3:r, exec, hyprnome --previous
+             hyprgrass-bind = , swipe:3:l, exec, hyprnome
 
              hyprgrass-bind = , swipe:4:u, movewindow,u
              hyprgrass-bind = , swipe:4:d, movewindow,d
@@ -356,6 +356,9 @@ in
          accel_profile = adaptive
          follow_mouse = 2
          float_switch_override_focus = 0
+         touchpad {
+           natural_scroll = true
+         }
        }
 
        misc {
@@ -1163,8 +1166,8 @@ in
   gesture swipe up 3	hyprctl dispatch hycov:toggleoverview
   gesture swipe down 3	nwggrid-wrapper
 
-  gesture swipe right 3	hyprnome
-  gesture swipe left 3	hyprnome --previous
+  gesture swipe right 3	 hyprnome --previous
+  gesture swipe left 3	hyprnome
   gesture swipe up 4	hyprctl dispatch movewindow u
   gesture swipe down 4	hyprctl dispatch movewindow d
   gesture swipe left 4	hyprctl dispatch movewindow l
