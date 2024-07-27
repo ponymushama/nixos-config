@@ -350,6 +350,7 @@ in
 
        input {
          kb_layout = us
+         kb_options = ctrl:nocaps
          repeat_delay = 350
          repeat_rate = 50
          accel_profile = adaptive
