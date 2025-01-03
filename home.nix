@@ -77,6 +77,7 @@
     # misc
     which
     aria2
+    catppuccin-kde
 
     # nix related
     #
@@ -90,6 +91,7 @@
     spotify
     _1password-gui
     _1password-cli
+    kate
   ];
 
   # git
