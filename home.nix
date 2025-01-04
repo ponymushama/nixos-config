@@ -74,6 +74,9 @@
     zoxide
     done
 
+    # gnome
+    gnome-tweaks
+
     # misc
     which
     aria2
