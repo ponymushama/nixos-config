@@ -229,9 +229,10 @@
       "...." = "cd ../../..";
       "....." = "cd ../../../..";
       # 其他实用别名
-      svim = "sudoedit";              # 使用 sudo 权限编辑
+      y = "yazi";
       c = "clear";                    # 清屏
       h = "history";                  # 历史记录
+      sm = "sudoedit";
       ports = "netstat -tulanp";      # 查看端口占用
       path = "echo $PATH | tr ':' '\n'"; # 显示 PATH
     };
