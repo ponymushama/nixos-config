@@ -34,7 +34,6 @@
     tmux
     lazygit
     fastfetch
-    yazi
 
     # lazyvim
     clang-tools
@@ -229,10 +228,9 @@
       "...." = "cd ../../..";
       "....." = "cd ../../../..";
       # 其他实用别名
-      y = "yazi";
       c = "clear";                    # 清屏
       h = "history";                  # 历史记录
-      sm = "sudoedit";
+      sm = "sudoedit";                # edit
       ports = "netstat -tulanp";      # 查看端口占用
       path = "echo $PATH | tr ':' '\n'"; # 显示 PATH
     };
@@ -325,6 +323,19 @@
       # Interval of saving user data in minutes
       AutoSavePeriod=30
     '';
+
+  # yazi
+
+  programs.yazi = {
+    enable = true;
+    enableFishIntegration = true;
+    shellWrapperName = "y";
+    settings = {
+      manager = {
+        show_hidden = true;
+      };
+    };
+  };
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
