@@ -8,6 +8,13 @@
 
   # flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.substituters = [
+    # 中国镜像
+    "https://mirrors.sustech.edu.cn/nix-channels/store"
+    "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
+    # 社区缓存
+    "https://nix-community.cachix.org"
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
