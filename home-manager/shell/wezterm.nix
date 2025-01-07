@@ -6,7 +6,6 @@
     enable = true;
     # 基础配置
     extraConfig = ''
-      local wezterm = require("wezterm")
       -- max window
       local mux = wezterm.mux
       wezterm.on('gui-startup', function(cmd)
@@ -18,7 +17,7 @@
         config = wezterm.config_builder()
       end
       -- rendering
-      config.front_end = "WebGpu"
+      config.front_end = "OpenGL"
       -- font
       config.font = wezterm.font_with_fallback({
         { family = "JetBrains Mono", weight = "Bold" },
@@ -34,7 +33,7 @@
       config.tab_bar_at_bottom = true
       -- window
       -- 去掉顶部的窗口栏
-      config.window_decorations = "RESIZE"
+      -- config.window_decorations = "RESIZE"
       -- 窗口透明
       config.window_background_opacity = 0.85
       -- 调整窗口的边框距离
