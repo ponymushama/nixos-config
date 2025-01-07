@@ -13,10 +13,6 @@
     xclip
     wl-clipboard
 
-    # rime enable lua
-    librime
-    librime-lua
-
     # lang
     rustc
     cargo
