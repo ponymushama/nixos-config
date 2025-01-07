@@ -33,7 +33,6 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.backupFileExtension = "backup";
             home-manager.users.ponymushama = import ./home-manager/home.nix;
             home-manager.extraSpecialArgs = inputs // specialArgs;
           }
