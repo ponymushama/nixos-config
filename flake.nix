@@ -14,10 +14,15 @@
     };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ... }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
+      ponymushama = let
+        username = "ponymushama";
+        specialArgs = {inherit username;};
+      in
       # 这里的 my-nixos 替换成你的主机名称
-      ponymushama = nixpkgs.lib.nixosSystem {
+      nixpkgs.lib.nixosSystem {
+        inherit specialArgs;
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
@@ -29,7 +34,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.ponymushama = import ./home-manager/home.nix;
-            home-manager.extraSpecialArgs = inputs;
+            home-manager.extraSpecialArgs = inputs // specialArgs;
           }
         ];
       };
