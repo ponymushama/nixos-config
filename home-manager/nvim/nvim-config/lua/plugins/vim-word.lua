@@ -1,0 +1,3 @@
+return {
+  "jspringyc/vim-word",
+}

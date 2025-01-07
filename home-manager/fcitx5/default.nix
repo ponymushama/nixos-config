@@ -1,26 +1,9 @@
 { config, pkgs, inputs, ... }:
-# let
-#   customPkgs = pkgs.extend (self: super: {
-#     fcitx5-rime = super.fcitx5-rime.override {
-#       rimeDataPkgs = [ 
-#         (super.callPackage ./rime-data-ama {})
-#       ];
-#     };
-#   });
-# in
 {
   # fcitx5
   i18n.inputMethod = {
     enabled = "fcitx5";
-    fcitx5.addons =
-    # let
-    #   config.packageOverrides = pkgs: {
-    #     fcitx5-rime = pkgs.fcitx5-rime.override {
-    #         rimeDataPkgs = [./rime-data-ama];
-    #     };
-    #   };
-    # in
-    with pkgs; [
+    fcitx5.addons = with pkgs; [
       # rime
       fcitx5-rime
       fcitx5-configtool

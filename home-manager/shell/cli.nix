@@ -2,13 +2,6 @@
 
 {
   home.packages = with pkgs;[
-    # lazyvim
-    neovim
-    clang-tools
-    gcc
-    icu
-    nodejs
-
     # clipboard
     xclip
     wl-clipboard

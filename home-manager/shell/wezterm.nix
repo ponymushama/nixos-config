@@ -25,7 +25,7 @@
         { family = "Sarasa Mono SC", weight = "Bold" },
         { family = "Symbols Nerd Font Mono", scale = 0.8 },
       })
-      config.font_size = 14
+      config.font_size = 16
       config.use_cap_height_to_scale_fallback_fonts = true
       -- colorscheme
       config.color_scheme = "Catppuccin Mocha"

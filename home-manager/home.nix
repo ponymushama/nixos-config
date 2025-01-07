@@ -5,6 +5,7 @@
   imports = [
     ./shell
     ./fcitx5
+    ./nvim
   ];
 
   home.username = "ponymushama";
