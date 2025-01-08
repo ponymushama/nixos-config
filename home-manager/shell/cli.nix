@@ -26,8 +26,8 @@
     fzf
     bat
     fd
-    tldr
     zoxide
     which
+    tealdeer
   ];
 }
