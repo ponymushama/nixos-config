@@ -147,5 +147,9 @@
   programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;
 
+  # steam
+  hardware.graphics.enable32Bit = true;
+  programs.steam.enable = true;
+
   system.stateVersion = "24.11";
 }

@@ -11,5 +11,9 @@
     kate
     catppuccin-kde      # kate theme
     telegram-desktop
+    bottles
+    wechat-uos
+    youtube-music
+    discord
   ];
 }
