@@ -50,7 +50,7 @@
       config.background = {
 	{
 	  source = {
-	    File = "/home/ponymushama/Pictures/wezterm_bg_2.png",
+	    File = "/home/ponymushama/Pictures/wezterm_bg_3.png",
 	  },
 	    hsb = {
 	      hue = 1.0,
