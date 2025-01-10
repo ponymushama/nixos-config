@@ -22,6 +22,9 @@
   home.packages = with pkgs;[
     # fonts
     sarasa-gothic
+    lxgw-wenkai
+    lxgw-wenkai-screen
+    lxgw-neoxihei
     nerd-fonts.jetbrains-mono
     nerd-fonts.symbols-only
   ];

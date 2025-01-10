@@ -131,6 +131,9 @@
     fontDir.enable = true;
     packages = with pkgs; [
       sarasa-gothic
+      lxgw-wenkai
+      lxgw-wenkai-screen
+      lxgw-neoxihei
       nerd-fonts.jetbrains-mono
       nerd-fonts.symbols-only
     ];
@@ -140,9 +143,9 @@
   programs.dconf.enable = true;
   services.xserver.desktopManager.gnome.extraGSettingsOverrides = ''
     [org.gnome.desktop.interface]
-    font-name='Sarasa Mono SC 11'
-    document-font-name='Sarasa Mono SC 11'
-    monospace-font-name='JetBrainsMono Nerd Font Mono 11'
+    font-name='LXGW Wenkai Screen 12'
+    document-font-name='LXGW Wenkai Screen 12'
+    monospace-font-name='JetBrainsMono Nerd Font Mono 12'
   '';
  
   # default shell = fish
