@@ -5,15 +5,18 @@
     firefox
     obsidian
     mihomo-party
-    spotify
     _1password-gui
     _1password-cli
-    kate
-    catppuccin-kde      # kate theme
     telegram-desktop
     bottles
     wechat-uos
-    youtube-music
+    notepad-next
+    qq
+    vlc
     discord
+    foliate
+    zathura
   ];
+  programs.qutebrowser.enable = true;
+  services.dropbox.enable = true;
 }
