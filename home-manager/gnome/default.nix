@@ -14,9 +14,11 @@
     gnomeExtensions.openweather-refined
     gnomeExtensions.appindicator
     gnomeExtensions.open-bar
+    gnomeExtensions.pano
     numix-gtk-theme
     numix-cursor-theme
     numix-icon-theme-circle
     whitesur-gtk-theme
+    gthumb
   ];
 }
