@@ -14,7 +14,6 @@
     qq
     vlc
     discord
-    foliate
     zathura
   ];
   programs.qutebrowser.enable = true;
