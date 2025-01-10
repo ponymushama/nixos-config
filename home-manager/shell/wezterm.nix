@@ -46,29 +46,6 @@
       -- 改变字体大小，而不改变窗口大小
       config.adjust_window_size_when_changing_font_size = false
       config.window_close_confirmation = "NeverPrompt"
-      -- BG
-      config.background = {
-	{
-	  source = {
-	    File = "/home/ponymushama/Pictures/wezterm_bg_3.png",
-	  },
-	    hsb = {
-	      hue = 1.0,
-	      saturation = 1.1,
-	      brightness = 0.25,
-	    },
-	    width = "100%",
-	    height = "100%",
-	},
-	{
-	  source = {
-	    Color = "#282c35",
-	  },
-	    width = "100%",
-            height = "100%",
-            opacity = 0.4,
-	},
-      }
       -- cursor
       config.hide_mouse_cursor_when_typing = true
       config.xcursor_theme = "Adwaita"
@@ -76,3 +53,26 @@
     '';
   };
 }
+	#      -- BG
+	#      config.background = {
+	# {
+	#   source = {
+	#     File = "/home/ponymushama/Pictures/wezterm_bg_3.png",
+	#   },
+	#     hsb = {
+	#       hue = 1.0,
+	#       saturation = 1.1,
+	#       brightness = 0.25,
+	#     },
+	#     width = "100%",
+	#     height = "100%",
+	# },
+	# {
+	#   source = {
+	#     Color = "#282c35",
+	#   },
+	#     width = "100%",
+	#            height = "100%",
+	#            opacity = 0.4,
+	# },
+	#      }
