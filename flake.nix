@@ -13,15 +13,18 @@
     };
     # utils for python
     utils.url = "github:numtide/flake-utils";
+    # hyprland
+    hyprland.url = "github:hyprwm/Hyprland";
+	  ags.url = "github:aylur/ags/v1"; # aylurs-gtk-shell-v1
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, utils, ... }: 
+  outputs = inputs@{ self, nixpkgs, home-manager, utils, hyprland, ags, ... }: 
     {
       nixosConfigurations = {
-        # host
+        # hostname
         ponymushama = let
           username = "ponymushama";
-          specialArgs = {inherit username;};
+          specialArgs = {inherit username inputs;};
         in
         nixpkgs.lib.nixosSystem {
           inherit specialArgs;
@@ -36,7 +39,7 @@
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.users.ponymushama = import ./home-manager/home.nix;
-              home-manager.extraSpecialArgs = inputs // specialArgs;
+              home-manager.extraSpecialArgs = specialArgs;
             }
           ];
         };
