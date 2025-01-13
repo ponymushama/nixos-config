@@ -32,13 +32,13 @@
           # modules
           modules = [
             # system
-            ./configuration.nix
+            ./system/default.nix
             # home
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.ponymushama = import ./home-manager/home.nix;
+              home-manager.users.ponymushama = import ./user/default.nix;
               home-manager.extraSpecialArgs = specialArgs;
             }
           ];

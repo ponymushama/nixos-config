@@ -15,6 +15,8 @@
     vlc
     discord
     zathura
+    libreoffice
+    zotero
   ];
   programs.qutebrowser.enable = true;
   services.dropbox.enable = true;
