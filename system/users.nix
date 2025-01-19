@@ -46,19 +46,26 @@
     TERMINAL = "wezterm";
   };
 
-  # # flatpak
-  # systemd.services.flatpak-repo = {
-  #   path = [ pkgs.flatpak ];
-  #   script = ''
-  #     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-  #   '';
-  # };
+  # flatpak
+  systemd.services.flatpak-repo = {
+    path = [ pkgs.flatpak ];
+    script = ''
+      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    '';
+  };
+
+  # steam
+  programs.steam = {
+    enable = true;
+    gamescopeSession.enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+  };
 
   # # sudo $HOME
   # security.sudo.extraConfig = ''
   #   Defaults env_keep += "HOME XDG_CONFIG_HOME"
   # '';
-
 
   # # Virtualization / Containers
   # virtualisation.libvirtd.enable = false;

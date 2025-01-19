@@ -35,18 +35,24 @@
   environment.gnome.excludePackages = with pkgs; [
     gnome-music
     gnome-terminal
-    gedit
-    epiphany
-    geary
     gnome-characters
-    totem
     gnome-weather
     gnome-contacts
     gnome-maps
     gnome-connections
     gnome-photos
+    gnome-tour
+    gnome-calculator
+    totem
+    gedit
+    epiphany
+    geary
     yelp
     evince
+    file-roller
+    seahorse
+    baobab
+    simple-scan
   ];
 
   # make keymap config same between x11 & console & wayland

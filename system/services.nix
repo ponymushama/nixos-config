@@ -35,7 +35,7 @@
     nfs.server.enable = false;
  
     openssh.enable = true;
-    flatpak.enable = false;
+    flatpak.enable = true;
 	
   	blueman.enable = true;
  

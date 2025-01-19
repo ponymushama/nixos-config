@@ -19,6 +19,5 @@
     numix-cursor-theme
     numix-icon-theme-circle
     whitesur-gtk-theme
-    gthumb
   ];
 }

@@ -13,7 +13,6 @@ in
 {
   # system packages
   environment.systemPackages = (with pkgs; [
-  # System Packages
     baobab
     btrfs-progs
     clang
@@ -23,14 +22,11 @@ in
     ffmpeg
     glib #for gsettings to work
     gsettings-qt
-    git
     killall
     libappindicator
     libnotify
     openssl #required by Rainbow borders
     pciutils
-    vim
-    wget
     xdg-user-dirs
     xdg-utils
     (mpv.override {scripts = [mpvScripts.mpris];}) # with tray
@@ -47,7 +43,7 @@ in
     gtk-engine-murrine #for gtk themes
     hyprcursor # requires unstable channel
     hypridle # requires unstable channel
-    imagemagick 
+    imagemagick
     inxi
     jq
     kitty
@@ -69,9 +65,7 @@ in
     swappy
     swaynotificationcenter
     swww
-    unzip
     wallust
-    wl-clipboard
     wlogout
     xarchiver
     yad
@@ -105,14 +99,7 @@ in
   	  ];
 	
     virt-manager.enable = false;
-    
-    steam = {
-      enable = true;
-      gamescopeSession.enable = true;
-      remotePlay.openFirewall = true;
-      dedicatedServer.openFirewall = true;
-    };
-    
+ 
     xwayland.enable = true;
 
     seahorse.enable = true;

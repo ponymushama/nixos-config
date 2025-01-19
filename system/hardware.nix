@@ -10,7 +10,7 @@
     ../modules/local-hardware-clock.nix
   ];
 
-  drivers.amdgpu.enable = false;
+  drivers.amdgpu.enable = true;
   drivers.intel.enable = false;
   drivers.nvidia.enable = false;
   drivers.nvidia-prime = {
@@ -47,8 +47,8 @@
   # };
 
   # Extra Logitech Support
-  hardware.logitech.wireless.enable = false;
-  hardware.logitech.wireless.enableGraphical = false;
+  hardware.logitech.wireless.enable = true;
+  hardware.logitech.wireless.enableGraphical = true;
 
   # Bluetooth
   hardware = {

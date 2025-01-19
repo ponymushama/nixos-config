@@ -15,9 +15,9 @@
       config.font = wezterm.font_with_fallback({
         { family = "JetBrains Mono", weight = "Bold" },
         { family = "Sarasa Mono SC", weight = "Bold" },
-        { family = "Symbols Nerd Font Mono", scale = 0.8 },
+        { family = "Symbols Nerd Font Mono", scale = 0.7 },
       })
-      config.font_size = 18
+      config.font_size = 16
       config.use_cap_height_to_scale_fallback_fonts = true
       -- colorscheme
       config.color_scheme = "Catppuccin Mocha"
@@ -28,7 +28,7 @@
       -- 去掉顶部的窗口栏
       -- config.window_decorations = "RESIZE"
       -- 窗口透明
-      config.window_background_opacity = 0.85
+      config.window_background_opacity = 0.7
       -- 调整窗口的边框距离
       config.window_padding = {
         left = "0cell",

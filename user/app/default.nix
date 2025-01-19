@@ -9,15 +9,12 @@
     _1password-cli
     telegram-desktop
     bottles
-    wechat-uos
-    notepad-next
-    qq
     vlc
     discord
     zathura
     libreoffice
     zotero
+    zed-editor
   ];
-  programs.qutebrowser.enable = true;
   services.dropbox.enable = true;
 }
