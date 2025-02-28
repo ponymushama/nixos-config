@@ -5,17 +5,25 @@
   users.users.ponymushama = {
     isNormalUser = true;
     description = "ponymushama";
-    extraGroups = [ "networkmanager" "wheel" ];
+    # add i2c
+    extraGroups = [ "networkmanager" "wheel" "i2c" ];
   };
   users = {
     mutableUsers = true;
   };
+
+  # i2c LG UltraFine
+  users.groups.i2c = {};
+  services.udev.extraRules = ''
+    KERNEL=="i2c-[0-9]*", GROUP="i2c", MODE="0660"
+  '';
 
   # default system packages
   environment.systemPackages = with pkgs;[
     git
     vim
     wget
+    ddcutil        # LG UltraFine
   ];
 
   # unfree packages
@@ -44,6 +52,12 @@
     NIXOS_OZONE_WL = "1";
     # default terminal
     TERMINAL = "wezterm";
+    QT_IM_MODULE = "fcitx";
+    GTK_IM_MODULE = "fcitx";
+    XCURSOR_SIZE = "24";
+    XCURSOR_THEME = "Numix-Cursor-Light";
+    GDK_SCALE = "1";
+    QT_SCALE_FACTOR = "1";
   };
 
   # flatpak

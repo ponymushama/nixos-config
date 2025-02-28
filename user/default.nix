@@ -13,11 +13,23 @@
   home.username = "ponymushama";
   home.homeDirectory = "/home/ponymushama";
 
-  # cursor DPI 4K
-  xresources.properties = {
-    "Xcursor.size" = 16;
-    "Xft.dpi" = 172;
+  # env variables
+  home = {
+    sessionVariables = {
+      QT_IM_MODULE = "fcitx";
+      GTK_IM_MODULE = "fcitx";
+      XCURSOR_SIZE = "24";
+      XCURSOR_THEME = "Numix-Cursor-Light";
+      GDK_SCALE = "1";
+      QT_SCALE_FACTOR = "1";
+    };
   };
+
+  # # cursor DPI 4K
+  # xresources.properties = {
+  #   "Xcursor.size" = 16;
+  #   "Xft.dpi" = 172;
+  # };
 
   home.packages = with pkgs;[
     # fonts

@@ -14,6 +14,7 @@ in
   # system packages
   environment.systemPackages = (with pkgs; [
     baobab
+    bc
     btrfs-progs
     clang
     curl

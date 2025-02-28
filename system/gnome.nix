@@ -29,6 +29,9 @@
     font-name='LXGW Wenkai Screen 12'
     document-font-name='LXGW Wenkai Screen 12'
     monospace-font-name='JetBrainsMono Nerd Font Mono 12'
+    cursor-theme='Numix-Cursor-Light'
+    cursor-size=24
+    icon-theme='Numix-Circle'
   '';
 
   # delete GNOME default app

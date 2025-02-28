@@ -13,9 +13,10 @@
       "modprobe.blacklist=iTCO_wdt" #watchdog for Intel
    ];
 
-    # This is for OBS Virtual Cam Support
-    kernelModules = [ "v4l2loopback" "tun" ];
-    extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
+    # OBS & mihomo & LG UltraFine
+    kernelModules = [ "tun" "i2c-dev" ];
+    # kernelModules = [ "v4l2loopback" "tun" "i2c-dev" ];
+    # extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
  
     initrd = { 
       availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usb_storage" "usbhid" "sd_mod" ];
@@ -59,7 +60,7 @@
       mask = ''\xff\xff\xff\xff\x00\x00\x00\x00\xff\xff\xff'';
       magicOrExtension = ''\x7fELF....AI\x02'';
       };
- 
+
     plymouth.enable = true;
   };
 }

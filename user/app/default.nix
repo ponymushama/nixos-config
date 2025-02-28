@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs;[
     firefox
+    google-chrome
     obsidian
     mihomo-party
     _1password-gui
@@ -15,6 +16,8 @@
     libreoffice
     zotero
     zed-editor
+    qq
+    drawio
   ];
   services.dropbox.enable = true;
 }
