@@ -8,15 +8,12 @@
       set -gx EDITOR nvim
       set -gx VISUAL nvim
       set -gx TERM xterm-256color
+      set -U fish_greeting ""
     '';
     plugins = [
       {
-        name = "pure";
-        src = pkgs.fishPlugins.pure.src;
-      }
-      {
-        name = "done";
-        src = pkgs.fishPlugins.done.src;
+        name = "tide";
+        src = pkgs.fishPlugins.tide.src;
       }
       {
         name = "fzf.fish";

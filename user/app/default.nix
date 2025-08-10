@@ -6,6 +6,7 @@
     google-chrome
     obsidian
     mihomo-party
+    flclash
     _1password-gui
     _1password-cli
     telegram-desktop

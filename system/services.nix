@@ -32,27 +32,29 @@
     libinput.enable = true;
 
     rpcbind.enable = false;
+
     nfs.server.enable = false;
  
     openssh.enable = true;
+
     flatpak.enable = true;
 	
   	blueman.enable = true;
  
-  	# hardware.openrgb.enable = true;
-  	# hardware.openrgb.motherboard = "amd";
-
 	  fwupd.enable = true;
 
 	  upower.enable = true;
- 
-    printing = {
-      enable = false;
-      drivers = [
-        # pkgs.hplipWithPlugin
-      ];
-    };
- 
+
+  	# hardware.openrgb.enable = true;
+  	# hardware.openrgb.motherboard = "amd";
+
+    # printing = {
+    #   enable = false;
+    #   drivers = [
+    #     # pkgs.hplipWithPlugin
+    #   ];
+    # };
+
     # avahi = {
     #   enable = true;
     #   nssmdns4 = true;

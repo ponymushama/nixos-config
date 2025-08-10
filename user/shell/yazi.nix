@@ -6,11 +6,6 @@
     enable = true;
     enableFishIntegration = true;
     shellWrapperName = "y";
-    settings = {
-      manager = {
-        show_hidden = true;
-      };
-    };
     flavors = {
       catppuccin-mocha = let
         src = pkgs.fetchFromGitHub {
